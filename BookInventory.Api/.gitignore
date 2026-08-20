@@ -1,0 +1,39 @@
+## ---------- .NET / Backend ----------
+bin/
+obj/
+*.user
+*.suo
+.vs/
+
+# Rider/VS Code specific
+.idea/
+*.userosscache
+*.sln.docstates
+
+# EF Core migrations snapshots are fine to commit — do NOT ignore Migrations/
+
+## ---------- Node / React Frontend ----------
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Vite
+.vite/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+## ---------- Editor / OS ----------
+.DS_Store
+Thumbs.db
+.vscode/
+!.vscode/extensions.json
+
+## ---------- Env / Secrets ----------
+.env
+.env.local
+.env.*.local
