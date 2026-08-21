@@ -1,4 +1,5 @@
 namespace BookInventory.Api.Models;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 
 public class BookDetail
 {
@@ -9,5 +10,6 @@ public class BookDetail
     public string? Language { get; set; }
     
     // Foreign key
+    [ValidateNever]
     public Book Book { get; set; } = null!; // Navigation property back to Book
 }
